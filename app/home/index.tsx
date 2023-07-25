@@ -6,12 +6,15 @@ import {
     InfoContainer, GameName, DiscordName,
     DateTime, ResourcesContainer, Button,
     PlayersContainer, PlayersIcon, PlayersCount,
-    ButtonIcon, TabButtonImage
+    ButtonIcon, TabButtonImage, ButtonChange
 } from './styles';
+
+import { useNavigation } from '@react-navigation/native';
 
 
 const Home: React.FC = () => {
     const windowHeight = Dimensions.get('window').height;
+    const navigation = useNavigation();
 
     return (
         <Container>
@@ -36,11 +39,14 @@ const Home: React.FC = () => {
                     </ResourcesContainer>
                 </Rectangle>
             </ContentContainer>
-            <BottomBar style={{ bottom: -windowHeight * 0.036 }}>
+            <ButtonChange onPress={() => navigation.navigate('Home2')}>
+                <TabButtonImage source={require('../../src/assets/delete.png')} />
+            </ButtonChange>
+            <BottomBar>
                 <TabButton>
                     <TabButtonImage source={require('../../src/assets/gamesPic.png')} />
                 </TabButton>
-                <TabButton>
+                <TabButton onPress={() => navigation.navigate('Home')}>
                     <TabButtonImage source={require('../../src/assets/homePic.png')} />
                 </TabButton>
                 <TabButton>

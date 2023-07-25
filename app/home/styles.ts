@@ -111,11 +111,17 @@ export const BottomBar = styled.View`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
   width: 100%;
+  bottom: 0;
+  position: absolute;
 `;
 
 export const TabButtonImage = styled.Image`
   width: 32px;
   height: 32px;
+`;
+
+export const ButtonChange = styled.TouchableOpacity`
+  align-items: center;
+  margin-top: 50px;
 `;

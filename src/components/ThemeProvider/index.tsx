@@ -10,7 +10,7 @@ interface ThemeProviderViewProps {
   children: React.ReactNode;
 }
 
-export default function ThemeProviderView({ children } : ThemeProviderViewProps) {
+export default function ThemeProviderView({ children }: ThemeProviderViewProps) {
   const insets = useSafeAreaInsets();
 
   return (
@@ -18,7 +18,6 @@ export default function ThemeProviderView({ children } : ThemeProviderViewProps)
       <View style={{
         flex: 1,
         paddingTop: insets.top,
-        paddingBottom: insets.bottom,
         paddingLeft: insets.left,
         paddingRight: insets.right,
         backgroundColor: `${theme.colors.background}`,
