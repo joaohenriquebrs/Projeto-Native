@@ -16,7 +16,7 @@ const Home2: React.FC = () => {
     return (
         <Container>
             <ContentContainer>
-                <Logo source={require('../../src/assets/logoPrincipal.png')} />
+                <Logo source={require('../../assets/logoPrincipal.png')} />
                 <Greeting>Olá, username</Greeting>
                 <Title>Suas próximas partidas</Title>
             </ContentContainer>
@@ -30,17 +30,17 @@ const Home2: React.FC = () => {
                 </ProcurarPartidasText>
             </InfoContainer>
             <ImagesContainer>
-                <AdjustImage source={require('../../src/assets/noMatches.png')} />
+                <AdjustImage source={require('../../assets/noMatches.png')} />
             </ImagesContainer>
             <BottomBar>
-                <TabButton onPress={() => navigation.navigate('Home2')}>
-                    <TabButtonImage source={require('../../src/assets/gamesPic.png')} />
+                <TabButton onPress={() => navigation.navigate('Games')}>
+                    <TabButtonImage source={require('../../assets/gamesOff.png')} />
                 </TabButton>
                 <TabButton onPress={() => navigation.navigate('Home')}>
-                    <TabButtonImage source={require('../../src/assets/homePic.png')} />
+                    <TabButtonImage source={require('../../assets/homeOn.png')} />
                 </TabButton>
-                <TabButton>
-                    <TabButtonImage source={require('../../src/assets/profilePic.png')} />
+                <TabButton onPress={() => navigation.navigate('Profile')}>
+                    <TabButtonImage source={require('../../assets/profileOff.png')} />
                 </TabButton>
             </BottomBar>
         </Container>

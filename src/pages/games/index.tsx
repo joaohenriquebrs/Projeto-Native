@@ -12,7 +12,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 
 
-const Home: React.FC = () => {
+const Games: React.FC = () => {
     const windowHeight = Dimensions.get('window').height;
     const navigation = useNavigation();
 
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <Container>
             <ContentContainer>
                 <Logo source={require('../../assets/logoPrincipal.png')} />
-                <Greeting>Olá, username</Greeting>
+                <Greeting>Olá, Games</Greeting>
                 <Title>Suas próximas partidas</Title>
                 <Rectangle>
                     <InfoContainer>
@@ -39,15 +39,12 @@ const Home: React.FC = () => {
                     </ResourcesContainer>
                 </Rectangle>
             </ContentContainer>
-            <ButtonChange onPress={() => navigation.navigate('Home2')}>
-                <TabButtonImage source={require('../../assets/delete.png')} />
-            </ButtonChange>
             <BottomBar>
                 <TabButton onPress={() => navigation.navigate('Games')}>
-                    <TabButtonImage source={require('../../assets/gamesOff.png')} />
+                    <TabButtonImage source={require('../../assets/gamesOn.png')} />
                 </TabButton>
                 <TabButton onPress={() => navigation.navigate('Home')}>
-                    <TabButtonImage source={require('../../assets/homeOn.png')} />
+                    <TabButtonImage source={require('../../assets/homeOff.png')} />
                 </TabButton>
                 <TabButton onPress={() => navigation.navigate('Profile')}>
                     <TabButtonImage source={require('../../assets/profileOff.png')} />
@@ -57,6 +54,6 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Games;
 
 
