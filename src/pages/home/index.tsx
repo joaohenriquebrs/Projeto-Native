@@ -29,7 +29,7 @@ const Home: React.FC = () => {
                         <DateTime>06/07/2023 | 19h</DateTime>
                     </InfoContainer>
                     <ResourcesContainer>
-                        <Button>
+                        <Button onPress={() => navigation.navigate('Home2')}>
                             <ButtonIcon source={require('../../assets/delete.png')} />
                         </Button>
                         <PlayersContainer>
@@ -39,9 +39,6 @@ const Home: React.FC = () => {
                     </ResourcesContainer>
                 </Rectangle>
             </ContentContainer>
-            <ButtonChange onPress={() => navigation.navigate('Home2')}>
-                <TabButtonImage source={require('../../assets/delete.png')} />
-            </ButtonChange>
             <BottomBar>
                 <TabButton onPress={() => navigation.navigate('Games')}>
                     <TabButtonImage source={require('../../assets/gamesOff.png')} />

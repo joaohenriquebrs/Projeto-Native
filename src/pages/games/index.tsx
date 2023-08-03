@@ -2,11 +2,11 @@ import React from 'react';
 import { View, Text, Dimensions } from 'react-native';
 import {
     Container, BottomBar, TabButton, Logo,
-    Greeting, Title, Rectangle, ContentContainer,
+    RectangleCulture, Title, Rectangle, ContentContainer,
     InfoContainer, GameName, DiscordName,
     DateTime, ResourcesContainer, Button,
     PlayersContainer, PlayersIcon, PlayersCount,
-    ButtonIcon, TabButtonImage, ButtonChange
+    ButtonIcon, TabButtonImage, Phrase
 } from './styles';
 
 import { useNavigation } from '@react-navigation/native';
@@ -20,8 +20,10 @@ const Games: React.FC = () => {
         <Container>
             <ContentContainer>
                 <Logo source={require('../../assets/logoPrincipal.png')} />
-                <Greeting>Olá, Games</Greeting>
-                <Title>Suas próximas partidas</Title>
+                <RectangleCulture>
+                    <Phrase>Vai lá, marca uma partida e chama a galera!</Phrase>
+                </RectangleCulture>
+                <Title>Próximas partidas</Title>
                 <Rectangle>
                     <InfoContainer>
                         <GameName>Minecraft</GameName>

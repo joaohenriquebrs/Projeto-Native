@@ -120,8 +120,3 @@ export const TabButtonImage = styled.Image`
   width: 32px;
   height: 32px;
 `;
-
-export const ButtonChange = styled.TouchableOpacity`
-  align-items: center;
-  margin-top: 50px;
-`;

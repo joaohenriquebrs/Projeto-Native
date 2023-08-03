@@ -20,12 +20,24 @@ export const Logo = styled.Image`
   align-self: center;
 `;
 
-export const Greeting = styled.Text`
-  height: 24px;
-  width: 129px;
+export const RectangleCulture = styled.View`
+  height: 70px;
+  width: 100%;
+  border-radius: 5px;
+  align-self: center;
+  background-color: red;
   margin-top: 20px;
-  align-self: flex-start;
-  font-size: 20px;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+export const Phrase = styled.Text`
+  margin-left: 30px;
+  width: 175px;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
 `;
 
 export const Title = styled.Text`

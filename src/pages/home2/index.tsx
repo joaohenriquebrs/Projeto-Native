@@ -24,7 +24,7 @@ const Home2: React.FC = () => {
                 <NothingMarkedText>Você ainda não tem nada marcado 😕</NothingMarkedText>
                 <ProcurarPartidasText>
                     Procure novas partidas{' '}
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('Games')}>
                         <AquiText>aqui</AquiText>
                     </TouchableOpacity>
                 </ProcurarPartidasText>
